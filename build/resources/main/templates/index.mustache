@@ -6,17 +6,6 @@
 
     }
 
-    .table-rounded {
-        border-collapse: collapse;
-    }
-
-    .table-rounded th,
-    .table-rounded td {
-        border: 2px solid #000; /* 테두리 굵기와 색상을 조절할 수 있습니다. */
-        border-radius: 10px; /* 둥글게 만들고자 하는 정도를 조절할 수 있습니다. */
-        padding: 8px; /* 셀 내부 여백을 조절할 수 있습니다. */
-    }
-
      .table {
         width: 100%; /* 테이블 전체 너비를 100%로 설정 */
     }
@@ -31,14 +20,24 @@
 
 <div class="container">
     <h1 class="text-center mt-5">웹 서비스 게시판</h1>
+    <!-- 로그인 영역 -->
     <div class="row mt-5 justify-content-end"> <!-- justify-content-end 추가 -->
         <div class="col-md-3">
             <a href="/posts/save" role="button" class="btn btn-primary btn-sm btn-lg btn-block mb-2">글 등록</a>
+            {{#userName}}
+                Logged in as : <span id="user">{{userName}}</span>
+                <a href="/logout" class ="btn btn-info active" role="button">Logout</a>
+            {{/userName}}
+            {{^userName}}
+                <a href="/oauth2/authorization/google" class ="btn btn-success active" role="button">Google Login</a>
+
+                <a href="/oauth2/authorization/naver" class ="btn btn-success active" role="button">Naver Login Login</a>
+            {{/userName}}
         </div>
     </div>
 
     <!-- 목록 출력 영역 -->
-    <table class="table p-3 table-bordered table-rounded">
+    <table class="table p-3 table-bordered">
         <thead class="thead-strong">
         <tr>
             <th>게시글 번호</th>

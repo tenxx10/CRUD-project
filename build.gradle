@@ -12,10 +12,19 @@ buildscript {
     }
 }
 
-apply plugin : 'java'
-apply plugin : "eclipse"
-apply plugin: 'org.springframework.boot'
-apply plugin: 'io.spring.dependency-management'
+
+
+//apply plugin : 'java'
+//apply plugin : "eclipse"
+//apply plugin: 'org.springframework.boot'
+//apply plugin: 'io.spring.dependency-management'
+
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.1.7.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+    id 'eclipse'
+}
 
 group 'com.jojoldu.book'
 version '1.0-SNAPSHOT'
@@ -38,9 +47,14 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-oauth2-client')
 
     compile('org.springframework.boot:spring-boot-starter-security')
-    implementation 'org.springframework.boot:spring-boot-starter-security'
+//    implementation 'org.springframework.boot:spring-boot-starter-security'
+    compile('org.springframework.session:spring-session-jdbc')
+    testCompile("org.springframework.security:spring-security-test")
+
+    implementation 'org.springframework.boot:spring-boot-starter-devtools'
 
 }
+
 
 sourceSets {
     main {
@@ -49,5 +63,3 @@ sourceSets {
         }
     }
 }
-
-

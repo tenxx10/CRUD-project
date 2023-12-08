@@ -1,50 +1,51 @@
 {{>layout/header}}
 
 <style>
-    .table-bordered {
-        border: 2px solid #000;
-
+    /* 전체 텍스트 가운데 정렬 */
+    body {
+        text-align: center;
     }
 
-    .table-rounded {
-        border-collapse: collapse;
+    /* 테이블 가운데 정렬 */
+    .table {
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .table-rounded th,
-    .table-rounded td {
-        border: 2px solid #000; /* 테두리 굵기와 색상을 조절할 수 있습니다. */
-        border-radius: 10px; /* 둥글게 만들고자 하는 정도를 조절할 수 있습니다. */
-        padding: 8px; /* 셀 내부 여백을 조절할 수 있습니다. */
-    }
 
-     .table {
-        width: 100%; /* 테이블 전체 너비를 100%로 설정 */
-    }
-
-    .table th,
-    .table td {
-        text-align: center; /* 텍스트를 가운데 정렬 */
+        /* h1 태그 위쪽에 여백 추가 */
+    h1 {
+        margin-top: 50px;
+        margin-bottom: 30px;
     }
 
 
 </style>
 
+<h1>웹 서비스 게시판</h1>
 <div class="container">
-    <h1 class="text-center mt-5">웹 서비스 게시판</h1>
-    <div class="row mt-5 justify-content-end"> <!-- justify-content-end 추가 -->
-        <div class="col-md-3">
-            <a href="/posts/save" role="button" class="btn btn-primary btn-sm btn-lg btn-block mb-2">글 등록</a>
+    <div class="row">
+        <div class="col-md-6">
+            <a href="/posts/save" role="button" class="btn btn-primary">글 등록</a>
+            {{#userName}}
+                Logged in as: <span id="user">{{userName}}</span>
+                <a href="/logout" class="btn btn-info active" role="button">Logout</a>
+            {{/userName}}
+            {{^userName}}
+                <a href="/oauth2/authorization/google" class="btn btn-success active" role="button">Google Login</a>
+                <a href="/oauth2/authorization/naver" class="btn btn-secondary active" role="button">Naver Login</a>
+            {{/userName}}
         </div>
     </div>
-
+    <br>
     <!-- 목록 출력 영역 -->
-    <table class="table p-3 table-bordered table-rounded">
+    <table class="table table-horizontal table-bordered">
         <thead class="thead-strong">
         <tr>
-            <th>게시글 번호</th>
+            <th>게시글번호</th>
             <th>제목</th>
             <th>작성자</th>
-            <th>최종 수정일</th>
+            <th>최종수정일</th>
         </tr>
         </thead>
         <tbody id="tbody">
@@ -61,4 +62,5 @@
 </div>
 
 {{>layout/footer}}
+
 
