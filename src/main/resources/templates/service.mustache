@@ -1,0 +1,77 @@
+{{>layout/header}}
+
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+    }
+
+    .service-container {
+        max-width: 800px;
+        margin: 50px auto;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .service-header {
+        background-color: #007bff;
+        color: #fff;
+        padding: 20px;
+    }
+
+    .service-content {
+        padding: 20px;
+    }
+
+    .service-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #007bff;
+    }
+
+    .service-description {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #333;
+    }
+
+    .service-button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+
+    .service-button:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<body>
+
+<!-- 서비스 말고 공지사항이면 좋겠음 지구를 지키는 법 -->
+
+<div class="service-container">
+    <div class="service-header">
+        <h1>Service</h1>
+    </div>
+    <div class="service-content">
+        <div class="service-title">편리한 기능 제공</div>
+        <div class="service-description">
+            우리의 서비스는 편리하고 사용하기 쉬운 기능을 제공합니다.
+            고객들에게 최상의 경험을 제공하기 위해 노력하고 있습니다.
+        </div>
+        <a href="#" class="service-button">더 알아보기</a>
+    </div>
+</div>
+
+{{>layout/footer}}

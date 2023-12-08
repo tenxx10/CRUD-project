@@ -52,5 +52,11 @@ public class IndexController {
 
         return "posts-update";
     }
+
+    @GetMapping("/service")
+    public String service(){
+        return "service";
+    }
+
 }
 
