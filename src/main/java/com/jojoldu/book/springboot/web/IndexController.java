@@ -53,9 +53,9 @@ public class IndexController {
         return "posts-update";
     }
 
-    @GetMapping("/service")
-    public String service(){
-        return "service";
+    @GetMapping("/announce")
+    public String announce(){
+        return "announce";
     }
 
 }
