@@ -1,5 +1,19 @@
 {{>layout/header}}
 
+<style>
+    .card {
+        width: 18rem; /* 카드 너비 설정 */
+        margin: 0.5rem; /* 카드 간격 설정 */
+    }
+
+    .card img {
+        width: 100%; /* 이미지 너비 100%로 설정하여 부모 카드에 맞게 크기 조절 */
+        height: 200px; /* 이미지 높이 설정 */
+        object-fit: cover; /* 이미지의 비율 유지하며 채우기 */
+    }
+
+</style>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Jay lee</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -15,19 +29,58 @@
                 <a class="nav-link" href="#">서비스</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">문의</a>
+                <a class="nav-link" href="/index">게시판</a>
             </li>
         </ul>
     </div>
 </nav>
 
 <!-- 메인 콘텐츠 -->
-<div class="container mt-5">
-    <h1 class="text-center">환영합니다!</h1>
-    <p class="lead text-center">사이트에 대한 간단한 소개 또는 메시지</p>
+<div class="container mt-5 bg-light p-4 rounded mb-5">
+    <h1 class="text-center text-primary">"Let's protect our oceans."</h1>
+    <p class="lead text-center" style="font-weight: bold;">Save marine life</p>
     <div class="text-center">
-        <a href="/index" role="button" class="btn btn-primary btn-lg">게시판 바로가기</a>
+        <a href="/index" role="button" class="btn btn-primary btn-md">게시판 바로가기</a>
     </div>
 </div>
+
+
+<!-- 카드 그룹 시작 -->
+<div class="card-deck">
+
+    <!-- 카드 1 -->
+    <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/7974/7974866.png" class="card-img-top" alt="카드 이미지">
+        <div class="card-body">
+            <h5 class="card-title">거북이 첫째</h5>
+            <p class="card-text">거북이1. 귀여움 ㅋ</p>
+            <a href="#" class="btn btn-sm btn-primary">자세히 보기</a>
+        </div>
+    </div>
+
+    <!-- 카드 2 -->
+    <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2023/06/06/23/25/turtle-8045834_1280.png" class="card-img-top" alt="카드 이미지">
+        <div class="card-body">
+            <h5 class="card-title">거북이 둘째</h5>
+            <p class="card-text">거북이2. 꽤나 깜찍함.</p>
+            <a href="#" class="btn btn-sm btn-primary">자세히 보기</a>
+        </div>
+    </div>
+
+    <!-- 카드 3 -->
+    <div class="card">
+        <img src="https://www.urbanbrush.net/web/wp-content/uploads/edd/2023/02/urban-20230228095059365617.jpg"
+             class="card-img-top" alt="카드 이미지">
+        <div class="card-body">
+            <h5 class="card-title">거북이 셋째</h5>
+            <p class="card-text">거북이 막내. 귀여움.</p>
+            <a href="#" class="btn btn-sm btn-primary">자세히 보기</a>
+        </div>
+    </div>
+
+    <!-- 추가적인 카드 더 넣기 -->
+</div>
+
 
 {{>layout/footer}}
