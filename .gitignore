@@ -1,0 +1,4 @@
+# 프로젝트 제외 경로
+/freelec-springboot2-webservice/build/
+/freelec-springboot2-webservice/out/
+/freelec-springboot2-webservice/out/production/classes/
