@@ -19,16 +19,7 @@ public class IndexController {
     private final PostsService postsService;
 
 
-    @GetMapping("/")
-    public String home(Model model, @LoginUser SessionUser user) {
-        model.addAttribute("posts", postsService.findAllDesc());
 
-        if(user != null) {
-            model.addAttribute("userName", user.getName());
-        }
-
-        return "home"; // home 화면으로 이동
-    }
 
     @GetMapping("/index")
     public String index(Model model, @LoginUser SessionUser user){
@@ -38,6 +29,17 @@ public class IndexController {
             model.addAttribute("userName", user.getName());
         }
         return "index";
+    }
+
+    @GetMapping("/")
+    public String home(Model model, @LoginUser SessionUser user) {
+        model.addAttribute("posts", postsService.findAllDesc());
+
+        if(user != null) {
+            model.addAttribute("userName", user.getName());
+        }
+
+        return "home"; // home 화면으로 이동
     }
 
     @GetMapping("/posts/save")

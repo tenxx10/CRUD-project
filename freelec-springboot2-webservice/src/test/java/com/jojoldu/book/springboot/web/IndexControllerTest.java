@@ -20,7 +20,7 @@ public class IndexControllerTest {
     @Test
     public void 메인페이지_로딩() {
         //when
-        String body = this.restTemplate.getForObject("/", String.class);
+        String body = this.restTemplate.getForObject("/index", String.class);
 
         //then
         assertThat(body).contains("웹 서비스 게시판");
