@@ -5,6 +5,12 @@
     <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
+  <component name="DBNavigator.Project.DatabaseBrowserManager">
+    <autoscroll-to-editor value="false" />
+    <autoscroll-from-editor value="true" />
+    <show-object-properties value="true" />
+    <loaded-nodes />
+  </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="4d441a2e-c1b2-4909-a9bf-ed4fdd2fa3cd">
       <console name="freelec" type="STANDARD" schema="" session="Main" />
@@ -38,6 +44,7 @@ select * from test;]]></console>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files>
       <object connection-id="4d441a2e-c1b2-4909-a9bf-ed4fdd2fa3cd" object-ref="consoles/freelec" />
+      <object connection-id="4d441a2e-c1b2-4909-a9bf-ed4fdd2fa3cd" object-ref="consoles/freelec2" />
     </open-files>
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
@@ -537,5 +544,9 @@ select * from test;]]></console>
         </visibility-settings>
       </environment>
     </general-settings>
+  </component>
+  <component name="DBNavigator.Project.StatementExecutionManager">
+    <execution-variables />
+    <execution-variable-types />
   </component>
 </project>
