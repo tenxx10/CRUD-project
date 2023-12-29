@@ -16,8 +16,6 @@ Hfreelec-springboot2-webservice/src/test/resources/application.properties,3\9\3
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 j
 :src/main/java/com/jojoldu/book/springboot/Application.java,c\7\c747908ca5effbd98a7dce59f72b8b75e7c3b22f
-;
-.travis.yml,d\e\dea01dd89a3b602828e630677fde5d77c06441c8
 r
 Bsrc/main/java/com/jojoldu/book/springboot/web/IndexController.java,0\0\00b1af89bae87c28ac669d67450f2b7d76807ce4
 v
