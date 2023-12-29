@@ -8,12 +8,6 @@ j
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 r
 Bsrc/main/java/com/jojoldu/book/springboot/web/IndexController.java,0\0\00b1af89bae87c28ac669d67450f2b7d76807ce4
-v
-Fsrc/test/java/com/jojoldu/book/springboot/web/IndexControllerTest.java,0\6\062cde1c0bfed72d89f80e2440b6e52df1e9d4ec
-â
-Yfreelec-springboot2-webservice/src/main/java/com/jojoldu/book/springboot/Application.java,e\0\e005750c3c5a017e66342d96c9435560a7a0ffe2
-ë
-afreelec-springboot2-webservice/src/main/java/com/jojoldu/book/springboot/web/IndexController.java,9\1\91fa29f26534a8161661effd0f4cbca53ba1f9c3
 Å
 Q.idea/sonarlint/securityhotspotstore/c/7/c747908ca5effbd98a7dce59f72b8b75e7c3b22f,1\8\18a7b996b7746184915b28bc275ebb6e535db416
 w

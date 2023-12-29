@@ -5,6 +5,10 @@
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.8" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="com.jojoldu.book.project" target="1.8" />
+      <module name="com.jojoldu.book.project.main" target="1.8" />
+      <module name="com.jojoldu.book.project.test" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
