@@ -34,3 +34,5 @@ I
 .idea/modules/project.iml,f\7\f7e34306ccbe380cc001d2ca3d33aa97dd5c5d16
 7
 gradlew,5\b\5bbfa66edb4db3c7c33c5181f43510990d3307f9
+r
+Bsrc/main/java/com/jojoldu/book/springboot/web/HelloController.java,f\e\feac349d078f6094622762f1f14835b235045163
