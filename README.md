@@ -8,4 +8,4 @@
 개인 프로젝트
 
 
-java + spring boot 웹사이트
+java + spring boot 웹사이트 (AWS 배포)
